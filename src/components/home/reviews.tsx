@@ -28,7 +28,7 @@ const Reviews: React.FC<ListOfBooksrProps> = ({ css }) => {
                         {ReviewsData.map(({ from, reviewed }, index) => (
                             <section key={index}>
                                 <p>{reviewed}</p>
-                                <h3>"{from}"</h3>
+                                <h3>&quot;{from}&quot;</h3>
                             </section>
                         ))}
                     </Slider>
