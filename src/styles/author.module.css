@@ -9,7 +9,9 @@
 }
 
 .main img {
-    max-width: 500px;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 400px;
     position: relative;
     display: inline-block;
     float: right;
