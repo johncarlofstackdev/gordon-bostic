@@ -6,10 +6,9 @@ import useWindowResize from "@/hooks/useWindowResize";
 
 interface ListOfBooksrProps {
     css: any;
-    responsive: boolean;
 };
 
-const ListOfBooks: React.FC<ListOfBooksrProps> = ({ css, responsive }) => {
+const ListOfBooks: React.FC<ListOfBooksrProps> = ({ css }) => {
     const windowSize = useWindowResize();
     const mobileTabletView = windowSize.width <= 1030;
     return (
