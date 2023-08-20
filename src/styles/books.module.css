@@ -1,0 +1,89 @@
+.main {
+    width: 100%;
+    margin: auto;
+    max-width: var(--container-mx-width);
+    position: relative;
+    z-index: 10;
+    padding: 40px 20px;
+    margin: 20px auto;
+}
+
+.main p {
+    padding: 10px 0px;
+    font-size: 16;
+    line-height: 35px;
+}
+
+.list {
+    margin-top: 50px;
+    display: flex;
+    column-gap: 100px;
+    padding: 50px;
+    padding-bottom: unset !important;
+}
+
+.card {
+    width: 100%;
+}
+
+.card figure {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    margin-top: 30px;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.info span {
+    color: var(---secondary);
+    display: block;
+    margin: 10px;
+}
+
+.action a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.action a:first-child {
+    background-color: var(---primary);
+    color: white;
+}
+
+.action a:last-child {
+    color: var(---primary);
+}
+
+@media only screen and (max-width: 933px) {
+    .list {
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 41%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,56 @@
+.main {
+    width: 100%;
+    margin: auto;
+    max-width: var(--container-mx-width);
+    position: relative;
+    z-index: 10;
+    padding: 40px 20px;
+    margin: 20px auto;
+}
+
+.content  h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.divider{
+    height: 3px;
+    width: 60px;
+    background-color: var(---primary);
+    display: inline-block
+}
+
+.content img{
+    width: 300px;
+    float: left;
+    margin: 50px;
+    margin-left: unset !important;
+    margin-top: unset !important;
+}
+
+.content p:first-child{
+    color: var(---secondary);
+}
+
+.status{
+    color: var(---secondary);
+}
+
+.content p{
+    line-height: 40px;
+}
+
+.content a{
+    width: 230px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(---primary);
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}

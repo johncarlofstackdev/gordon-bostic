@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+"use client";
+import { useState, useEffect } from 'react';
 
 function useWindowResize() {
   const [windowSize, setWindowSize] = useState<{ width: number; height: number }>({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 0,
+    height: 0,
   });
 
   useEffect(() => {
@@ -14,15 +15,19 @@ function useWindowResize() {
       });
     };
 
-    window.addEventListener("resize", handleResize);
+    // Attach the resize event listener when the component mounts
+    window.addEventListener('resize', handleResize);
+
+    // Call the handler once to set the initial window size
+    handleResize();
 
     // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
-  }, []); // Empty dependency array to run the effect only once
+  }, []); // Empty dependency array to ensure the effect runs only once
 
   return windowSize;
-};
+}
 
 export default useWindowResize;

@@ -9,5 +9,12 @@
     max-width: var(--container-mx-width);
     align-items: center;
     padding: var(--container-padding);
-    margin-top: 70px;
+    margin-top: 100px;
+    position: relative;
+}
+
+@media only screen and (max-width: 1031px) {
+    .container{
+        margin-top: 50px;
+    }
 }
