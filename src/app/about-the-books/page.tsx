@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Books from "@/cms/books.json";
@@ -13,12 +14,17 @@ export const metadata: Metadata = {
 const About: React.FC = () => {
   return (
     <div className={Styles.main}>
-      <p>Embark on a literary journey through three captivating novels by Author Gordon Bostic. "The Chosen" weaves a tapestry of love and magic in an American town, blurring the lines between reality and mysticism, while "The Labyrinth" follows Lee's harrowing quest through a treacherous challenge to escape poverty, uncovering a dystopian society's truths along the way. Finally, "The Mantis Squad" introduces gifted children thrust into a perilous government experiment, navigating trust, identity, and power in a thrilling narrative. These novels explore the extraordinary within the ordinary, testing characters' resilience against extraordinary circumstances, all while inviting readers to reflect on their own lives and the forces that shape them.</p>
+      <p>Embark on a literary journey through three captivating novels by Author Gordon Bostic. &ldquo;The Chosen&ldquo; weaves a tapestry of love and magic in an American town, blurring the lines between reality and mysticism, while &ldquo;The Labyrinth&ldquo; follows Lee's harrowing quest through a treacherous challenge to escape poverty, uncovering a dystopian society's truths along the way. Finally, &ldquo;The Mantis Squad&ldquo; introduces gifted children thrust into a perilous government experiment, navigating trust, identity, and power in a thrilling narrative. These novels explore the extraordinary within the ordinary, testing characters' resilience against extraordinary circumstances, all while inviting readers to reflect on their own lives and the forces that shape them.</p>
       <section className={Styles.list}>
         {Books.map((data, i) =>
           <div className={Styles.card} key={i}>
             <figure>
-              <img src={data.path} alt={data.title} />
+              <Image 
+              src={data.path} 
+              alt={data.title} 
+              width={500}
+              height={400}
+              />
             </figure>
             <div className={Styles.info}>
               <h3>{data.title}</h3>

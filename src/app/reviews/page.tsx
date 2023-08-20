@@ -15,7 +15,7 @@ const Reviews: React.FC = () => {
     return (
         <div className={Styles.main}>
             <p>
-                Read what others are saying about the author's books. Explore their
+                Read what others are saying about the author books. Explore their
                 thoughts, opinions, and feedback.
             </p>
             <section className={Styles.list}>

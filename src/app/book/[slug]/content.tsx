@@ -22,7 +22,11 @@ const Content: React.FC<BookProps> = ({ css }) => {
     const data = findBookByReference(BookData, router[2]);
 
     if(!data){
-        return useRouter().replace("/404");
+        return (
+            <div>
+                <p>No Record Found</p>
+            </div>
+        );
     }
 
     return (

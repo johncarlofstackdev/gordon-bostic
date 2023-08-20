@@ -24,7 +24,7 @@ const AboutTheAuthor: React.FC<AboutTheAuthorProps> = ({ css }) => {
                     />
                 </div>
                 <div className={css["author-descrip"]}>
-                    <p>Gordon Bostic was born in West Virginia and grew up in Virginia. He’s a graduate of Dabney S. Lancaster Community College, James Madison University, Brookdale Community College and Fairleigh Dickinson University. He worked as a computer scientist and a software engineer for most of his life. He began writing at a young age as a way of expressing himself, his feelings, and his view of the world. He has currently had seven books published. Gordon currently lives on the Jersey Shore with his wife, Susan.</p>
+                    <p>Gordon Bostic was born in West Virginia and grew up in Virginia. He&quot;s a graduate of Dabney S. Lancaster Community College, James Madison University, Brookdale Community College and Fairleigh Dickinson University. He worked as a computer scientist and a software engineer for most of his life. He began writing at a young age as a way of expressing himself, his feelings, and his view of the world. He has currently had seven books published. Gordon currently lives on the Jersey Shore with his wife, Susan.</p>
                 </div>
             </div>
         );
