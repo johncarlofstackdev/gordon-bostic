@@ -3,6 +3,7 @@ import React from "react";
 import { usePathname, useRouter } from "next/navigation"; // Assuming this is a valid import
 import BookData from "@/cms/books.json";
 import Image from "next/image";
+import he from "he";
 
 interface Book {
     reference: string;
@@ -36,7 +37,7 @@ const Content: React.FC<BookProps> = ({ css }) => {
             <h1>{data?.title}</h1>
             <span className={css.divider}></span>
             <p className={css.status}>{data?.available ? "- Available -" : "- Not Available -"}</p>
-            <p>{data?.description}</p>
+            <p>{he.decode(data?.description)}</p>
             <div className={css.action}>
                 <a href="#">Buy Now</a>
             </div>

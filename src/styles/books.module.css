@@ -84,7 +84,7 @@
     padding: 15px;
     font-weight: bold;
     font-size: 18px;
-    color: var(---primary);
+    color: var(---secondary);
 }
 
 @media only screen and (max-width: 933px) {

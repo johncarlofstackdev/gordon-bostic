@@ -34,6 +34,7 @@ const Tabs: React.FC = () => {
                 behavior: "smooth",
                 block: "start",
             });
+            hideNavigation();
         }
     };
 
@@ -70,6 +71,7 @@ const Tabs: React.FC = () => {
                             <Link
                                 href={path}
                                 className={activePath === path ? Styles.active : Styles["not-active"]}
+                                onClick={hideNavigation}
                             >
                                 {label}
                             </Link>
