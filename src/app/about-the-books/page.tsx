@@ -37,6 +37,9 @@ const About: React.FC = () => {
           </div>
         )}
       </section>
+      <div className={Styles.seemore}>
+          <a href="https://www.amazon.com/stores/Gordon-Bostic/author/B09FRZNW9T?ref=ap_rdr&store_ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true" target="_blank">See More Books</a>
+      </div>
     </div>
   );
 };

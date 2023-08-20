@@ -18,9 +18,12 @@ const AboutTheAuthor: React.FC<AboutTheAuthorProps> = ({ css }) => {
                 <h3>About the Author</h3>
                 <h1>Gordon <span>Bostic</span></h1>
                 <div className={css["author-image"]}>
-                    <img
+                    <Image
                         src="/images/Author-Picture.png"
                         alt="Author Profile"
+                        width="300"
+                        height="345"
+                        priority={true}
                     />
                 </div>
                 <div className={css["author-descrip"]}>

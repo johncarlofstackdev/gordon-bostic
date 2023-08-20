@@ -2,6 +2,7 @@
 import React from "react";
 import { usePathname, useRouter } from "next/navigation"; // Assuming this is a valid import
 import BookData from "@/cms/books.json";
+import Image from "next/image";
 
 interface Book {
     reference: string;
@@ -31,7 +32,7 @@ const Content: React.FC<BookProps> = ({ css }) => {
 
     return (
         <section className={css.content}>   
-            <img src={data?.second_path} alt={data?.title} />
+            <Image src={data?.second_path} alt={data?.title} width={600} height={500} />
             <h1>{data?.title}</h1>
             <span className={css.divider}></span>
             <p className={css.status}>{data?.available ? "- Available -" : "- Not Available -"}</p>

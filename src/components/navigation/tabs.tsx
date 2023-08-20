@@ -25,7 +25,7 @@ const Tabs: React.FC = () => {
         if (!checkMobileView && isNavigationVisible) {
             hideNavigation();
         }
-    }, [windowSize, isNavigationVisible]);
+    }, [windowSize, isNavigationVisible, checkMobileView]);
 
     const scrollToSection = (id: any) => {
         const element = document.getElementById(id);

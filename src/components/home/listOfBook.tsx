@@ -16,22 +16,13 @@ const ListOfBooks: React.FC<ListOfBooksrProps> = ({ css, responsive }) => {
         <div className={css.list}>
             <div className={css["list-container"]}>
                 <div className={css.books}>
-                    {
-                        mobileTabletView ? (
-                            <img
-                                src="/images/List-of-Books(2).png"
-                                alt="Author Profile"
-                            />
-                        ) : (
-                            <Image
-                                src="/images/List-of-Books(2).png"
-                                alt="Author Profile"
-                                width="550"
-                                height="600"
-                                priority={true}
-                            />
-                        )
-                    }
+                    <Image
+                        src="/images/List-of-Books(2).png"
+                        alt="Author Profile"
+                        width="550"
+                        height="600"
+                        priority={true}
+                    />
                 </div>
                 <div className={css["books-intro"]}>
                     <section>
