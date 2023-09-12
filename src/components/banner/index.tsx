@@ -27,7 +27,7 @@ const Banner: React.FC = () => {
     if (!router[1]) {
         return (
             <video autoPlay muted loop className={Styles.video}>
-                <source src="/videos/banner/bg_low_quality.mp4" type="video/mp4" />
+                <source src="/videos/banner/MantiSquadFeatured.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         );

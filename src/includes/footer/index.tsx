@@ -38,7 +38,6 @@ const Footer: React.FC = () => {
             <a href="#"><FontAwesomeIcon icon={faPinterest} /></a>
           </div>
           <p>© Copyright 2023 <b>Gorndon <span>Bostic</span></b>. All Rights Reserved.</p>
-          <p>Created with ✨ by <a href="">Company Name</a></p>
         </div>
       </footer>
       <Overlay
