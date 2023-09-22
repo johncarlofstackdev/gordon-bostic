@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             <a href="#"><FontAwesomeIcon icon={faAmazon} /></a>
             <a href="#"><FontAwesomeIcon icon={faPinterest} /></a>
           </div>
-          <p>© Copyright 2023 <b>Gorndon <span>Bostic</span></b>. All Rights Reserved.</p>
+          <p>© Copyright 2023 <b>Gordon <span>Bostic</span></b>. All Rights Reserved.</p>
         </div>
       </footer>
       <Overlay

@@ -55,6 +55,15 @@
   padding-top: 60px;
 }
 
+.authorAction a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(---primary);
+  margin-top: -30px;
+  display: inline-block;
+}
+
 
 .about-author p {
   padding: 40px 20px;
@@ -102,6 +111,7 @@
   z-index: 10;
   margin-top: 50px;
   padding: 20px;
+  padding-bottom: 60px;
 }
 
 .author-descrip {
