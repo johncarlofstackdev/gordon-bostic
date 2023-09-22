@@ -12,6 +12,7 @@ interface Book {
     title: string;
     description: string;
     second_path: string;
+    buy_link: String;
 }
 
 interface BookProps {
