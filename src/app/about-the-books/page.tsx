@@ -30,7 +30,7 @@ const About: React.FC = () => {
               <h3>{data.title}</h3>
               <span>{data.available ? "Available" : "Not Available"}</span>
               <div className={Styles.action}>
-                <a href="#">Buy Now</a>
+                <a href={data.buy_link}>Buy Now</a>
                 <Link href={`/book/${data.reference}`}>Read More</Link>
               </div>
             </div>

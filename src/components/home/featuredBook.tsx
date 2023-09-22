@@ -34,7 +34,7 @@ const Featured: React.FC<FeaturedProps> = ({ css }) => {
                     <div className={css["book-intro"]}>
                         <p>In the gripping and enthralling poetic novel &ldquo;Mantis Squad,&ldquo; a group of gifted children with extraordinary abilities become pawns in a dangerous government experiment. Their powers, concealed by their parents, are forcibly revealed when the government snatches them away for intensive training.</p>
                         <div className={css["book-action"]}>
-                            <a href="#">Buy Now</a>
+                            <a href="#https://www.amazon.com/Mantis-Squad-Gordon-Bostic/dp/B0CJB17DJ3/ref=sr_1_5?qid=1695402728&refinements=p_27%3AGordon+Bostic&s=books&sr=1-5&text=Gordon+Bostic">Buy Now</a>
                             <Link href="/book/mantis-squad">Read More</Link>
                         </div>
                     </div>

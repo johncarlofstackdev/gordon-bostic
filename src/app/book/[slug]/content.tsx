@@ -39,7 +39,7 @@ const Content: React.FC<BookProps> = ({ css }) => {
             <p className={css.status}>{data?.available ? "- Available -" : "- Not Available -"}</p>
             <p>{he.decode(data?.description)}</p>
             <div className={css.action}>
-                <a href="#">Buy Now</a>
+                <a href={data?.buy_link}>Buy Now</a>
             </div>
         </section>
     );
