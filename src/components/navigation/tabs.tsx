@@ -27,17 +27,6 @@ const Tabs: React.FC = () => {
         }
     }, [windowSize, isNavigationVisible, checkMobileView]);
 
-    const scrollToSection = (id: any) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-            });
-            hideNavigation();
-        }
-    };
-
     if (!checkMobileView) {
         return (
             <nav className={Styles.tabs}>
@@ -53,7 +42,7 @@ const Tabs: React.FC = () => {
                         </li>
                     ))}
                     <li>
-                        <a href="#" onClick={() => scrollToSection("contact-me")}>Contact Me</a>
+                        <a href="#contact-me">Contact Me</a>
                     </li>
                 </ul>
             </nav>
