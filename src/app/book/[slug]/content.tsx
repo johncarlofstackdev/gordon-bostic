@@ -13,6 +13,7 @@ interface Book {
     description: string;
     second_path: string;
     buy_link: String;
+    video_intro: String;
 }
 
 interface BookProps {
@@ -32,17 +33,26 @@ const Content: React.FC<BookProps> = ({ css }) => {
         );
     }
 
-    return (
-        <section className={css.content}>   
-            <Image src={data?.second_path} alt={data?.title} width={600} height={500} />
-            <h1>{data?.title}</h1>
-            <span className={css.divider}></span>
-            <p className={css.status}>{data?.available ? "- Available -" : "- Not Available -"}</p>
-            <p>{he.decode(data?.description)}</p>
-            <div className={css.action}>
-                <a href={data?.buy_link.toString()}>Buy Now</a>
-            </div>
-        </section>
+    return (<>
+            <section className={css.content}>   
+                <Image src={data?.second_path} alt={data?.title} width={600} height={500} />
+                <h1>{data?.title}</h1>
+                <span className={css.divider}></span>
+                <p className={css.status}>{data?.available ? "- Available -" : "- Not Available -"}</p>
+                <p>{he.decode(data?.description)}</p>
+                <div className={css.action}>
+                    <a href={data?.buy_link.toString()}>Buy Now</a>
+                </div>
+            </section>
+            
+           <div className={css.video}>
+                <h2>Video Intro</h2>
+                <video width="100%" height="auto" controls>
+                    <source src={data?.video_intro.toString()} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+           </div>
+        </>
     );
 };
 
